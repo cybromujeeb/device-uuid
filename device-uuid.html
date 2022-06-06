@@ -11,7 +11,6 @@
     <script>
         // npm install device-uuid --save
         var DeviceUUID = new DeviceUUID();
-        var baseUrl     =   '<?php echo base_url()?>';
         const uuid = DeviceUUID.get();
             console.log(uuid, 'uuid');
             document.write("Your device unique uuid :- " + uuid);
