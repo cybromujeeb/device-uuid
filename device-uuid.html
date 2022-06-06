@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="/device-uuid/device-uuid.min.js" type="text/javascript"></script>
+    <script>
+        // npm install device-uuid --save
+        var DeviceUUID = new DeviceUUID();
+        var baseUrl     =   '<?php echo base_url()?>';
+        const uuid = DeviceUUID.get();
+            console.log(uuid, 'uuid');
+            document.write("Your device unique uuid :- " + uuid);
+            console.log(DeviceUUID.parse());
+        </script>
+</body>
+</html>
